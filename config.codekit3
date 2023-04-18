@@ -184,6 +184,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/pets.png" : {
       "ft" : 32768,
       "iS" : 122812,
@@ -212,6 +222,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/Assets\/search icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/Assets\/search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/search.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -266,6 +286,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/Assets\/Vector.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/Assets\/Vector.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/Assets\/youtube.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -287,6 +317,71 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/img\/activites\/band.png" : {
+      "ft" : 32768,
+      "iS" : 128158,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/band.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/butterfly.png" : {
+      "ft" : 32768,
+      "iS" : 101237,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/butterfly.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/diy flowers.png" : {
+      "ft" : 32768,
+      "iS" : 87994,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/diy flowers.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/kids cocoon.png" : {
+      "ft" : 32768,
+      "iS" : 92982,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/kids cocoon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/pets.png" : {
+      "ft" : 32768,
+      "iS" : 122812,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/pets.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/deploy\/img\/global\/flowericon.svg" : {
       "ft" : 2097152,
@@ -321,11 +416,81 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/search-icon.svg" : {
+    "\/deploy\/img\/icons\/facebook.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/search-icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/location.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/location.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/Logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/Logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/phone.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/phone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icons\/youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/youtube.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -415,6 +580,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/Activites.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Activites.html",
+      "oF" : 0
+    },
     "\/dev\/content\/detail.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -459,7 +632,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
@@ -483,7 +656,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
