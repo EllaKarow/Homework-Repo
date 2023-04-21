@@ -344,11 +344,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/activites\/diy flowers.png" : {
+    "\/deploy\/img\/activites\/diy-flowers.png" : {
       "ft" : 32768,
       "iS" : 87994,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/activites\/diy flowers.png",
+      "oAP" : "\/deploy\/img\/activites\/diy-flowers.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -357,11 +357,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/activites\/kids cocoon.png" : {
+    "\/deploy\/img\/activites\/kids-cocoon.png" : {
       "ft" : 32768,
       "iS" : 92982,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/activites\/kids cocoon.png",
+      "oAP" : "\/deploy\/img\/activites\/kids-cocoon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -535,11 +535,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/ticket-link\/babys breathe-circle.png" : {
+    "\/deploy\/img\/ticket-link\/babys-breathe-circle.png" : {
       "ft" : 32768,
       "iS" : 22815,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/ticket-link\/babys breathe-circle.png",
+      "oAP" : "\/deploy\/img\/ticket-link\/babys-breathe-circle.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -588,14 +588,6 @@
       "oAP" : "\/dev\/content\/Activites.html",
       "oF" : 0
     },
-    "\/dev\/content\/detail.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/detail.html",
-      "oF" : 0
-    },
     "\/dev\/content\/hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -610,14 +602,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/photogallery.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/search-button.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/search-button.html",
       "oF" : 0
     },
     "\/dev\/content\/ticket-link.kit" : {
