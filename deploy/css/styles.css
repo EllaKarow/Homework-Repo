@@ -401,15 +401,6 @@ footer > div {
 /* =============
     Activites
 ============= */
-#activities h1 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". activities .";
-}
-#activities h1 > div {
-  grid-area: Activities;
-  border: 1px solid #c70303;
-}
 #activities ul {
   padding: 0;
   margin: 0;

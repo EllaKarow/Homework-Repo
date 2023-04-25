@@ -4,14 +4,6 @@
 #activities{
 
     h1{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". activities ." ;
-
-        >div{
-            grid-area: Activities;
-            border: 1px solid #c70303;
-        }
 
     }
 
