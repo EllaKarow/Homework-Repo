@@ -1,6 +1,13 @@
 /* =============
     Activites
 ============= */
-#activites{
-    
+#ticket-link{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". Activites ." ;
+
+    >div{
+        grid-area: Activites;
+        border: 1px solid #db1d1d;
+    }
 }

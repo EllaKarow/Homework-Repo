@@ -2,5 +2,12 @@
     ticket-link
 ============= */
 #ticket-link{
-    
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". ticket-link ." ;
+
+    >div{
+        grid-area: ticket-link;
+        border: 1px solid #db1d1d;
+    }
 }
