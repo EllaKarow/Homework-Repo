@@ -580,12 +580,12 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/Activites.kit" : {
+    "\/dev\/content\/activities.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/Activites.html",
+      "oAP" : "\/dev\/content\/activities.html",
       "oF" : 0
     },
     "\/dev\/content\/hero.kit" : {
@@ -813,7 +813,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_Activites.scss" : {
+    "\/dev\/scss\/sections\/_activities.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -822,7 +822,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_Activites.css",
+      "oAP" : "\/dev\/scss\/sections\/_activities.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
