@@ -604,12 +604,12 @@
       "oAP" : "\/dev\/content\/photogallery.html",
       "oF" : 0
     },
-    "\/dev\/content\/ticket-link.kit" : {
+    "\/dev\/content\/sub-hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/ticket-link.html",
+      "oAP" : "\/dev\/content\/sub-hero.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -828,7 +828,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_heroes.scss" : {
+    "\/dev\/scss\/sections\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -837,13 +837,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_heroes.css",
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_ticket-link.scss" : {
+    "\/dev\/scss\/sections\/_sub-hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -852,7 +852,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_ticket-link.css",
+      "oAP" : "\/dev\/scss\/sections\/_sub-hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

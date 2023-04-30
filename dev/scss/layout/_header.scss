@@ -2,12 +2,27 @@
     Header
 ============= */
 header{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header ." ;
+  
+    #logo-nav{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". logo-nav .";
+        
+        >div{
+            background-color: navy;
+            grid-area: logo-nav;
+        }
+    }
 
-    >div{
-        grid-area: header;
-        border: 1px solid #c70303;
+    #form-content{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". search .";
+
+        >div{
+            background-color: yellow;
+            grid-area: search;
+        }
+
     }
 }

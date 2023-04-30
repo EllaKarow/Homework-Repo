@@ -327,6 +327,14 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .large-images {
   width: 100%;
 }
@@ -361,14 +369,23 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  grid-template-areas: ". logo-nav .";
 }
-header > div {
-  grid-area: header;
-  border: 1px solid #c70303;
+header #logo-nav > div {
+  background-color: navy;
+  grid-area: logo-nav;
+}
+header #form-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #form-content > div {
+  background-color: yellow;
+  grid-area: search;
 }
 
 /* =============
@@ -385,19 +402,33 @@ footer > div {
 }
 
 /* =============
-    heroes
+    hero
 ============= */
-#hero #hero-sub {
+#hero section {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+  grid-template-areas: ". hero-sub .";
+  background-color: peachpuff;
 }
-#hero #hero-sub > div {
-  grid-area: hero;
-  border: 1px solid #c70303;
+#hero section > div {
+  grid-area: hero-sub;
 }
 
-/* ----------- Hero 2 ----------*/
+/* =============
+    sub-hero
+============= */
+#sub-hero aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". sub-hero .";
+  background-color: peachpuff;
+}
+#sub-hero aside > div {
+  grid-area: sub-hero;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
 /* =============
     Activites
 ============= */
@@ -405,31 +436,22 @@ footer > div {
   padding: 0;
   margin: 0;
 }
+
 #activities ul li {
   list-style: none;
 }
+
 #activities ul li img {
   width: 100%;
 }
+
 #activities ul li .act-sub {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". Activites .";
 }
+
 #activities ul li .act-sub > div {
   grid-area: Activites;
-  border: 1px solid #db1d1d;
-}
-
-/* =============
-    ticket-link
-============= */
-#ticket-link {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". ticket-link .";
-}
-#ticket-link > div {
-  grid-area: ticket-link;
   border: 1px solid #db1d1d;
 }
