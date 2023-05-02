@@ -9,7 +9,6 @@ header{
         grid-template-areas: ". logo-nav .";
         
         >div{
-            background-color: navy;
             grid-area: logo-nav;
         }
     }
@@ -20,7 +19,6 @@ header{
         grid-template-areas: ". search .";
 
         >div{
-            background-color: yellow;
             grid-area: search;
         }
 

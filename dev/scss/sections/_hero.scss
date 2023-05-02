@@ -6,10 +6,15 @@
     section{
         display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero-sub .";
+        grid-template-areas: ". hero .";
         background-color: peachpuff;
+
+
+        
         >div{
-            grid-area: hero-sub;
+            grid-area: hero;
+
         }
+        
     }
 }

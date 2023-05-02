@@ -1,13 +1,56 @@
 /* =============
     Footer
 ============= */
-footer{
+
+
+#footer{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". footer ." ;
+    grid-template-areas: ". footer .";
 
-    >div{
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+      }
+
+      
+    div{
         grid-area: footer;
-        border: 1px solid #c70303;
+        background-color: hotpink;
+
+        ul{
+            margin: 0;
+            padding: 0;
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-areas: 
+                "f1 f2"
+                "f1 f3";
+            }
+
+            @include lg{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: 
+                "f1 f2 f3";
+            }
+
+
+            li{
+                list-style: none;
+            }
+
+            #f1{
+                grid-area: f1;
+              }
+              #f2{
+                grid-area: f2;
+              }
+              #f3{
+                grid-area: f3;
+        }
     }
+
+}
 }
