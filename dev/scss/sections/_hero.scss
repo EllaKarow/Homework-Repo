@@ -3,18 +3,36 @@
 ============= */
 
 #hero{
-    section{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". hero .";
-        background-color: peachpuff;
 
+    #hero-bottom{
 
-        
-        >div{
-            grid-area: hero;
-
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
         }
-        
+
+        section{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero .";
+            background-color: peachpuff;
+             >div{
+                grid-area: hero;
+    
+            }
+         }
+    
+         #hero-bottom-left{
+            background-color: aqua;
+            @include xxl{
+                grid-template-columns: 20% auto 16px;
+            }
+         }
+         #hero-bottom-right{
+            background-color: aquamarine;
+            @include xxl{
+                grid-template-columns: 16px auto 20%;
+            }
+         }
     }
 }

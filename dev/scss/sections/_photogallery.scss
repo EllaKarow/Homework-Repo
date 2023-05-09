@@ -1,47 +1,45 @@
-#photogallery ul {
-  padding: 0;
-  margin: 0;
-
-  @include xxl{
-    grid-template-columns: auto 1440px auto;
-  }
-
-  @include md{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "f1 f2"
-    "f1 f3";
-    gap: 16px;
-  }
-
+#photogallery{
   @include lg{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "f1 f2"
-    "f1 f3";
-    gap: 16px;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
   }
 
-  li{
-    list-style: none;
+  @include xxl{
+    grid-template-columns: auto 1200px auto;
   }
-  #f1{
-    grid-area: f1;
-  }
-  #f2{
-    grid-area: f2;
-  }
-  #f3{
-    grid-area: f3;
-  }
-  
+  ul{
+    @include md{
+      grid-area: gallery;
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+    @include lg{
+      grid-template-columns: 60% auto;
+    }
+    @include xxl{
+      grid-template-areas: 
+      "g1 g2"
+      "g1 g3";
+    }
 
+    #g1{
+      @include xxl{
+        grid-area: g1;
+      }
+    }
+    #g2{
+      @include xxl{
+        grid-area: g2;
+      }
+    }
+    #g3{
+      @include xxl{
+        grid-area: g3;
+      }
+    }
+  }
 }
 
-#activities ul li img {
-  width: 100%;
-}
-  
+
   
