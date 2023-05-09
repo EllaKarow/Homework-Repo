@@ -7,7 +7,8 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-    background-color: hotpink;
+    background-color: var(--brown);
+    background-color: #342B29;
     color: white;
 
     @include xxl{
@@ -19,6 +20,7 @@
         grid-area: footer;
 
             @include md{
+                padding: 16px;
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
                 grid-template-areas: 
@@ -27,6 +29,7 @@
             }
 
             @include lg{
+                padding: 40px 16px;
                 grid-template-columns: repeat(3,1fr);
                 grid-template-areas: 
                 "f1 f2 f3";
@@ -38,13 +41,45 @@
                 @include md{
                     grid-area: f1;
                 }
+                h2{
+                    color: white;
+                }
+                color: #9EAB8E;
               }
               #f2{
+                display: flex;
+                flex-direction: column;
+
                 @include md{
                     grid-area: f2;
                 }
+                form{
+                    input{
+                        background-color: #9EAB8E;
+                        color: #342B29;
+                    outline: transparent;
+                    
+                }
+                button{
+                    background-color: #9D94C9;
+                    outline: transparent;
+                    color: white;
+                }
+        
+                }
               }
               #f3{
+                section{
+                    display: flex;
+                   justify-content: space-between;
+                   margin-right: 300px;
+                   @include md{
+                    margin-right: 200px;
+                   }
+                    
+
+                }
+               
                 @include md{
                     grid-area: f3;
                 }

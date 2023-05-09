@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --brown: #342B29
+  --purple: #4C4669
+  --lav: #9D94C9
+  --sage: #9EAB8E
+  --green: #5E6E62 ;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -332,6 +337,8 @@ ul {
   padding: 0;
 }
 ul li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -387,21 +394,41 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 20px 0px;
+}
 header #logo-nav {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
+  background-color: var(--brown);
+  background-color: #342B29;
+  color: white;
 }
 header #logo-nav > div {
-  grid-area: logo-nav;
+  display: flex;
+  padding: 20px;
+}
+header #logo-nav > div div {
+  padding: 20px;
 }
 header #form-content {
   display: grid;
-  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
 header #form-content > div {
   grid-area: search;
+  padding: 18px;
+}
+header #form-content > div form input {
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  color: #5E6E62;
+}
+header #form-content > div form button {
+  border: none;
+  background-color: var(--purple);
+  background-color: #4C4669;
 }
 
 /* =============
@@ -411,7 +438,8 @@ header #form-content > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
-  background-color: hotpink;
+  background-color: var(--brown);
+  background-color: #342B29;
   color: white;
 }
 @media (min-width: 1440px) {
@@ -424,6 +452,7 @@ header #form-content > div {
 }
 @media (min-width: 768px) {
   #footer > div {
+    padding: 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2" "f1 f3";
@@ -431,18 +460,49 @@ header #form-content > div {
 }
 @media (min-width: 1024px) {
   #footer > div {
+    padding: 40px 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "f1 f2 f3";
   }
+}
+#footer > div #f1 {
+  color: #9EAB8E;
 }
 @media (min-width: 768px) {
   #footer > div #f1 {
     grid-area: f1;
   }
 }
+#footer > div #f1 h2 {
+  color: white;
+}
+#footer > div #f2 {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
   #footer > div #f2 {
     grid-area: f2;
+  }
+}
+#footer > div #f2 form input {
+  background-color: #9EAB8E;
+  color: #342B29;
+  outline: transparent;
+}
+#footer > div #f2 form button {
+  background-color: #9D94C9;
+  outline: transparent;
+  color: white;
+}
+#footer > div #f3 section {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 300px;
+}
+@media (min-width: 768px) {
+  #footer > div #f3 section {
+    margin-right: 200px;
   }
 }
 @media (min-width: 768px) {
@@ -464,25 +524,51 @@ header #form-content > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
-  background-color: peachpuff;
 }
 #hero #hero-bottom section > div {
   grid-area: hero;
 }
 #hero #hero-bottom #hero-bottom-left {
-  background-color: aqua;
+  background-color: var(--purple);
+  background-color: #4C4669;
+  color: white;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  #hero #hero-bottom #hero-bottom-left {
+    padding-left: 16px;
+  }
+}
+#hero #hero-bottom #hero-bottom-left > div {
+  display: flex;
+  align-items: center;
+}
+#hero #hero-bottom #hero-bottom-left > div nav {
+  margin-left: auto;
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-left {
-    grid-template-columns: 20% auto 16px;
+    grid-template-columns: 20% auto 20%;
+    padding-left: 227px;
   }
 }
 #hero #hero-bottom #hero-bottom-right {
-  background-color: aquamarine;
+  background-color: var(--lav);
+  background-color: #9D94C9;
+  color: white;
+  padding: 0 16px;
+}
+#hero #hero-bottom #hero-bottom-right > div {
+  display: flex;
+  align-items: center;
+}
+#hero #hero-bottom #hero-bottom-right > div nav {
+  margin-left: auto;
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-right {
     grid-template-columns: 16px auto 20%;
+    padding-right: 227px;
   }
 }
 
@@ -512,20 +598,26 @@ header #form-content > div {
   }
 }
 #sub-hero > div aside {
-  display: grid;
+  display: flex;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". sub-hero .";
-  background-color: blue;
+  background-color: var(--sage);
+  background-color: #9EAB8E;
+  color: white;
 }
 #sub-hero > div aside > div {
-  grid-area: sub-hero;
   display: grid;
   grid-template-columns: 70% auto;
+  align-items: center;
+  margin: 25px 18px;
 }
 
 /* =============
     Activites
 ============= */
+#activities {
+  padding: 78px 14px;
+}
 @media (min-width: 768px) {
   #activities {
     display: grid;
@@ -563,11 +655,25 @@ header #form-content > div {
 #activities > div section img {
   width: 100%;
 }
+#activities > div section section {
+  display: flex;
+  justify-content: center;
+}
+#activities > div section section div {
+  padding: 18px 22px;
+  margin: 18px;
+}
+#activities > div section section div a {
+  background-color: #4C4669;
+  color: white;
+  padding: 5px;
+}
 #activities > div section .act-sub {
-  display: grid;
+  display: flex;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". act-sub .";
-  background-color: blueviolet;
+  background-color: #5E6E62;
+  color: white;
 }
 #activities > div section .act-sub > div {
   grid-area: act-sub;

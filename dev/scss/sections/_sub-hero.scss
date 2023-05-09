@@ -27,15 +27,23 @@
     }
 
         aside{
-            display: grid;
+            display: flex;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". sub-hero .";
-            background-color: blue;
+            background-color: var(--sage);
+            background-color: #9EAB8E;
+            color: white;
+
+            
+
 
             >div{
-                grid-area: sub-hero;
+                
                 display: grid;
                 grid-template-columns: 70% auto;
+                align-items: center;
+                margin: 25px 18px;
+
             }
         
             }

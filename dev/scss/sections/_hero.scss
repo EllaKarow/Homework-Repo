@@ -15,7 +15,6 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
-            background-color: peachpuff;
              >div{
                 grid-area: hero;
     
@@ -23,15 +22,50 @@
          }
     
          #hero-bottom-left{
-            background-color: aqua;
+            background-color: var(--purple);
+            background-color: #4C4669;
+            color: white;
+            padding: 0 16px;
+
+
+            @include md{
+                padding-left: 16px;
+            }
+
+
+            >div{
+                display: flex;
+                align-items: center;
+
+                nav{
+                    margin-left: auto;
+                }
+            }
             @include xxl{
-                grid-template-columns: 20% auto 16px;
+                grid-template-columns: 20% auto 20%;
+                padding-left: 227px;
             }
          }
          #hero-bottom-right{
-            background-color: aquamarine;
+            background-color: var(--lav);
+            background-color: #9D94C9;
+            color: white;
+            padding: 0 16px;
+
+            
+
+        
+            >div{
+                display: flex;
+                align-items: center;
+
+                nav{
+                    margin-left: auto;
+                }
+            }
             @include xxl{
                 grid-template-columns: 16px auto 20%;
+                padding-right: 227px;
             }
          }
     }

@@ -3,6 +3,7 @@
     Activites
 ============= */
 #activities{
+  padding: 78px 14px;
 
   @include md{
     display: grid;
@@ -42,14 +43,32 @@
       }
     }
     section{
+      
       img{
         width: 100%;
       }
+      section{
+        display: flex;
+        justify-content: center;
+
+        div{
+          padding: 18px 22px;
+          margin: 18px;
+          a{
+            
+            background-color: #4C4669;
+            color: white;
+            padding: 5px;
+          }
+
+        }
+      }
       .act-sub{
-        display: grid;
+        display: flex;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". act-sub .";
-        background-color: blueviolet;
+        background-color: #5E6E62;
+        color: white;
         >div{
           grid-area: act-sub;
         }
