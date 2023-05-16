@@ -441,6 +441,7 @@ header #form-content > div form button {
   background-color: var(--brown);
   background-color: #342B29;
   color: white;
+  padding: 24px 0;
 }
 @media (min-width: 1440px) {
   #footer {
@@ -456,6 +457,7 @@ header #form-content > div form button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2" "f1 f3";
+    gap: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -495,20 +497,26 @@ header #form-content > div form button {
   outline: transparent;
   color: white;
 }
-#footer > div #f3 section {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 300px;
-}
-@media (min-width: 768px) {
-  #footer > div #f3 section {
-    margin-right: 200px;
-  }
-}
 @media (min-width: 768px) {
   #footer > div #f3 {
     grid-area: f3;
   }
+}
+@media (min-width: 1024px) {
+  #footer > div #f3 {
+    text-align: right;
+  }
+}
+#footer > div #f3 section ul {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  #footer > div #f3 section ul {
+    justify-content: flex-end;
+  }
+}
+#footer > div #f3 section ul li {
+  margin-right: 16px;
 }
 
 /* =============

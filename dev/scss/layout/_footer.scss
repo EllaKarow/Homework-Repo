@@ -10,6 +10,7 @@
     background-color: var(--brown);
     background-color: #342B29;
     color: white;
+    padding: 24px 0;
 
     @include xxl{
         grid-template-columns: auto 1200px auto;
@@ -26,6 +27,7 @@
                 grid-template-areas: 
                 "f1 f2"
                 "f1 f3";
+                gap: 16px;
             }
 
             @include lg{
@@ -69,20 +71,28 @@
                 }
               }
               #f3{
-                section{
-                    display: flex;
-                   justify-content: space-between;
-                   margin-right: 300px;
-                   @include md{
-                    margin-right: 200px;
-                   }
-                    
-
-                }
-               
+                
                 @include md{
                     grid-area: f3;
                 }
+                @include lg{
+                    text-align: right;
+                }
+                section{
+                    ul{
+                        display: flex;
+                        @include lg{
+                            justify-content: flex-end;
+                        }
+                        li{
+                            margin-right: 16px;
+    
+                        }
+                    }
+
+                }
+
+               
         }
     }
 
