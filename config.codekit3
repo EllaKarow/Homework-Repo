@@ -318,6 +318,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/activites\/band.jpg" : {
+      "ft" : 16384,
+      "iS" : 18454,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/band.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/activites\/band.png" : {
       "ft" : 32768,
       "iS" : 128158,
@@ -329,6 +342,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/butterfly.jpg" : {
+      "ft" : 16384,
+      "iS" : 9327,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/butterfly.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/activites\/butterfly.png" : {
@@ -344,6 +370,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/activites\/diy-flowers.jpg" : {
+      "ft" : 16384,
+      "iS" : 9583,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/diy-flowers.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/activites\/diy-flowers.png" : {
       "ft" : 32768,
       "iS" : 87994,
@@ -357,6 +396,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/activites\/kids-cocoon.jpg" : {
+      "ft" : 16384,
+      "iS" : 14321,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/kids-cocoon.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/activites\/kids-cocoon.png" : {
       "ft" : 32768,
       "iS" : 92982,
@@ -368,6 +420,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/activites\/pets.jpg" : {
+      "ft" : 16384,
+      "iS" : 14247,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/activites\/pets.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/activites\/pets.png" : {
@@ -392,6 +457,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/heros\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 774161,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heros\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/heros\/hero.png" : {
       "ft" : 32768,
@@ -496,6 +574,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/photogallery\/bigflowers.jpg" : {
+      "ft" : 16384,
+      "iS" : 94097,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/photogallery\/bigflowers.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/photogallery\/bigflowers.png" : {
       "ft" : 32768,
       "iS" : 1699987,
@@ -507,6 +598,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/photogallery\/butterflies.jpg" : {
+      "ft" : 16384,
+      "iS" : 53835,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/photogallery\/butterflies.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/photogallery\/butterflies.png" : {
@@ -522,6 +626,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/photogallery\/tulipgroups.jpg" : {
+      "ft" : 16384,
+      "iS" : 39951,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/photogallery\/tulipgroups.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/photogallery\/tulipgroups.png" : {
       "ft" : 32768,
       "iS" : 516189,
@@ -535,6 +652,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/ticket-link\/babys-breathe-circle.jpg" : {
+      "ft" : 16384,
+      "iS" : 2488,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ticket-link\/babys-breathe-circle.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/ticket-link\/babys-breathe-circle.png" : {
       "ft" : 32768,
       "iS" : 22815,
@@ -546,6 +676,19 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ticket-link\/tulip-circle.jpg" : {
+      "ft" : 16384,
+      "iS" : 2980,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ticket-link\/tulip-circle.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/ticket-link\/tulip-circle.png" : {

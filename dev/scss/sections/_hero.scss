@@ -4,6 +4,27 @@
 
 #hero{
 
+    #hero-img{
+        background-image: url(../img/heros/hero.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+
+        @include md{
+            height: 50vh;
+        }
+
+        @include xl{
+            background-position: center 80%;
+            height: 65vh;
+        }
+    }
+
+    img{
+        font-size: 0;
+        display: block;
+    }
+
     #hero-bottom{
 
         @include md{
@@ -11,62 +32,86 @@
             grid-template-columns: 40% auto;
         }
 
-        section{
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+
+        .hero-bottom-card{
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
-             >div{
+            color: white;
+            padding: 16px 0;
+
+            >div{
                 grid-area: hero;
-    
-            }
-         }
-    
-         #hero-bottom-left{
-            background-color: var(--purple);
-            background-color: #4C4669;
-            color: white;
-            padding: 0 16px;
-
-
-            @include md{
-                padding-left: 16px;
-            }
-
-
-            >div{
                 display: flex;
                 align-items: center;
 
-                nav{
+                aside{
                     margin-left: auto;
+                        a:link, a:visited{
+                            display: flex;
+                            color: white;
+                            transition: 0.25s;
+
+                            &:hover, &:active{
+                                color: gold;
+                            }
+                        }
+                    }
                 }
             }
-            @include xxl{
-                grid-template-columns: 20% auto 20%;
-                padding-left: 227px;
-            }
-         }
-         #hero-bottom-right{
-            background-color: var(--lav);
-            background-color: #9D94C9;
-            color: white;
-            padding: 0 16px;
 
-            
-
+            #hero-bottom-left{
+                background-color: #4C4669;
+                @include xxl{
+                    grid-template-columns: 20% auto 16px;
+                }
+                
+                h1{
+                    font-weight: 600;
+                    line-height: 20px;
+                    font-size: rem-calc(16);
+    
+                    @include lg{
+                        line-height: 20px;
+                        font-size: rem-calc(25);
+                    }
+                }
+    
+                p{
+                            
+                    font-weight: 400;
+                    line-height: 20px;
+                    font-size: rem-calc(14);
         
-            >div{
-                display: flex;
-                align-items: center;
-
-                nav{
-                    margin-left: auto;
+                    @include lg{
+                        line-height: 20px;
+                        font-size: rem-calc(16);
+                    }
+                }  
+             }
+    
+             #hero-bottom-right{
+                background-color: #9D94C9;
+                @include xxl{
+                    grid-template-columns: 16px auto 20%;
+                }
+    
+                 h3{
+                    font-weight: 600;
+                    line-height: 24px;
+                    font-size: rem-calc(16);
                 }
             }
-            @include xxl{
-                grid-template-columns: 16px auto 20%;
-                padding-right: 227px;
-            }
-         }
-    }
-}
+        }
+     }
+        
+        
+        
+    
+         
+
+    
+

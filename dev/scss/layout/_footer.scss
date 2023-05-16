@@ -4,6 +4,23 @@
 
 
 #footer{
+    h2{
+        font-weight: 600;
+            line-height: 30px;
+            font-size: rem-calc(20);
+    }
+    h3{
+        font-weight: 600;
+            line-height: 24px;
+            font-size: rem-calc(16);
+    }
+    p{
+        font-weight: 400;
+            line-height: 18px;
+            font-size: rem-calc(12);
+
+    }
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -25,8 +42,8 @@
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
                 grid-template-areas: 
-                "f1 f2"
-                "f1 f3";
+                "g1 g2"
+                "g1 g3";
                 gap: 16px;
             }
 
@@ -39,38 +56,88 @@
 
 
 
-            #f1{
+            #g1{
+                color: #9EAB8E;
                 @include md{
                     grid-area: f1;
                 }
+
                 h2{
                     color: white;
+                    font-size: rem-calc(20);
+                    font-weight: 600;
                 }
-                color: #9EAB8E;
+                h3{
+                    font-size: rem-calc(16);
+                    font-weight: 600;
+                    margin-top: 16px;
+                    margin-bottom: 8px;
+
+                }
+                li{
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid white;
+                }
+
+                li:last-child{
+                    border: none;
+                }
+
+                section{
+                    display: flex;
+
+                }
+
+                a:link, a:visited{
+                    color: #9EAB8E;
+                    &:hover, &:active{
+                        color: whitesmoke;
+                    }
+                }
+                
               }
-              #f2{
-                display: flex;
-                flex-direction: column;
+
+              #g2{
+
+                h2{
+                    color: white;
+                    font-size: rem-calc(20);
+                    font-weight: 600;
+                }
 
                 @include md{
                     grid-area: f2;
                 }
+
                 form{
                     input{
                         background-color: #9EAB8E;
-                        color: #342B29;
-                    outline: transparent;
+                        width: 100%;
+                        border-radius: 0;
+                        border: none;
+                        box-sizing: border-box;
+                        padding: 16px 8px;
+                        color: #342B29; 
                     
                 }
+               
                 button{
-                    background-color: #9D94C9;
-                    outline: transparent;
+                    margin-top: 16px;
+                    border: none;
                     color: white;
+                    background-color: #9D94C9;
+                    padding: 8px 16px;
+                    display: inline-block;
+                     transition: 0.25s;
+
+                     &:hover{
+                        background-color: white;
+                        color: #4C4669;
+                    }
                 }
-        
                 }
               }
-              #f3{
+              #g3{
                 
                 @include md{
                     grid-area: f3;
@@ -86,6 +153,15 @@
                         }
                         li{
                             margin-right: 16px;
+                            a:link, a:visited{
+                                padding: 16px ;
+                                transition: 0.25s;
+                                &:hover, &:active{
+                                    color: white;
+                                    background-color: white;
+
+                                }
+                            }
     
                         }
                     }

@@ -13,11 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --brown: #342B29
-  --purple: #4C4669
-  --lav: #9D94C9
-  --sage: #9EAB8E
-  --green: #5E6E62 ;
+  --brown: #342B29;
+  --purple: #4C4669;
+  --lav: #9D94C9;
+  --sage: #9EAB8E;
+  --green: #5E6E62;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -342,6 +342,24 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+.content-space-top {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .content-space-top {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-space-top {
+    margin-top: 30px;
+  }
+}
+
 .show-large {
   display: none;
 }
@@ -367,9 +385,30 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
+.purple-button {
+  background-color: #4C4669;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: 0.25s;
+}
+.purple-button:hover {
+  background-color: white;
+  color: #4C4669;
+}
+
 /* =============
     Forms
 ============= */
@@ -394,41 +433,96 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  padding: 20px 0px;
-}
 header #logo-nav {
   display: grid;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
-  background-color: var(--brown);
   background-color: #342B29;
   color: white;
+  padding: 16px 0 24px;
 }
 header #logo-nav > div {
-  display: flex;
-  padding: 20px;
+  grid-area: logo-nav;
 }
-header #logo-nav > div div {
-  padding: 20px;
+header #logo-nav h1 {
+  font-weight: 400;
+  line-height: 35px;
+  font-size: 1.4375rem;
+}
+@media (min-width: 768px) {
+  header #logo-nav h1 {
+    line-height: 50px;
+    font-size: 2.0625rem;
+  }
+}
+header #logo-nav h3 {
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 0.6875rem;
+}
+@media (min-width: 768px) {
+  header #logo-nav h3 {
+    line-height: 19px;
+    font-size: 0.75rem;
+  }
 }
 header #form-content {
   display: grid;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  header #form-content {
+    padding: 24px 0;
+  }
 }
 header #form-content > div {
   grid-area: search;
-  padding: 18px;
+}
+header #form-content > div form {
+  display: flex;
 }
 header #form-content > div form input {
   border: none;
-  background-color: transparent;
-  color: var(--green);
-  color: #5E6E62;
+  border-bottom: 1px solid #5E6E62;
+  width: 100%;
+  border-radius: 0;
+  margin-right: 8px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-weight: 300;
+  line-height: 45px;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  header #form-content > div form input {
+    font-size: 1.875rem;
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  header #form-content > div form input {
+    font-size: 2.1875rem;
+    font-weight: 300;
+  }
+}
+@media (min-width: 768px) {
+  header #form-content > div form input {
+    line-height: 52px;
+    font-size: 2.1875rem;
+  }
 }
 header #form-content > div form button {
   border: none;
-  background-color: var(--purple);
   background-color: #4C4669;
+  border-radius: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+header #form-content > div form button:hover {
+  background-color: #5E6E62;
 }
 
 /* =============
@@ -443,6 +537,21 @@ header #form-content > div form button {
   color: white;
   padding: 24px 0;
 }
+#footer h2 {
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+#footer h3 {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1rem;
+}
+#footer p {
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 0.75rem;
+}
 @media (min-width: 1440px) {
   #footer {
     grid-template-columns: auto 1200px auto;
@@ -456,7 +565,7 @@ header #form-content > div form button {
     padding: 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "f1 f2" "f1 f3";
+    grid-template-areas: "g1 g2" "g1 g3";
     gap: 16px;
   }
 }
@@ -467,122 +576,230 @@ header #form-content > div form button {
     grid-template-areas: "f1 f2 f3";
   }
 }
-#footer > div #f1 {
+#footer > div #g1 {
   color: #9EAB8E;
 }
 @media (min-width: 768px) {
-  #footer > div #f1 {
+  #footer > div #g1 {
     grid-area: f1;
   }
 }
-#footer > div #f1 h2 {
+#footer > div #g1 h2 {
   color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
-#footer > div #f2 {
+#footer > div #g1 h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+#footer > div #g1 li {
+  padding-bottom: 16px;
+  border-bottom: 1px solid white;
+}
+#footer > div #g1 li:last-child {
+  border: none;
+}
+#footer > div #g1 section {
   display: flex;
-  flex-direction: column;
+}
+#footer > div #g1 a:link, #footer > div #g1 a:visited {
+  color: #9EAB8E;
+}
+#footer > div #g1 a:link:hover, #footer > div #g1 a:link:active, #footer > div #g1 a:visited:hover, #footer > div #g1 a:visited:active {
+  color: whitesmoke;
+}
+#footer > div #g2 h2 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
-  #footer > div #f2 {
+  #footer > div #g2 {
     grid-area: f2;
   }
 }
-#footer > div #f2 form input {
+#footer > div #g2 form input {
   background-color: #9EAB8E;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  box-sizing: border-box;
+  padding: 16px 8px;
   color: #342B29;
-  outline: transparent;
 }
-#footer > div #f2 form button {
-  background-color: #9D94C9;
-  outline: transparent;
+#footer > div #g2 form button {
+  margin-top: 16px;
+  border: none;
   color: white;
+  background-color: #9D94C9;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: 0.25s;
+}
+#footer > div #g2 form button:hover {
+  background-color: white;
+  color: #4C4669;
 }
 @media (min-width: 768px) {
-  #footer > div #f3 {
+  #footer > div #g3 {
     grid-area: f3;
   }
 }
 @media (min-width: 1024px) {
-  #footer > div #f3 {
+  #footer > div #g3 {
     text-align: right;
   }
 }
-#footer > div #f3 section ul {
+#footer > div #g3 section ul {
   display: flex;
 }
 @media (min-width: 1024px) {
-  #footer > div #f3 section ul {
+  #footer > div #g3 section ul {
     justify-content: flex-end;
   }
 }
-#footer > div #f3 section ul li {
+#footer > div #g3 section ul li {
   margin-right: 16px;
+}
+#footer > div #g3 section ul li a:link, #footer > div #g3 section ul li a:visited {
+  padding: 16px;
+  transition: 0.25s;
+}
+#footer > div #g3 section ul li a:link:hover, #footer > div #g3 section ul li a:link:active, #footer > div #g3 section ul li a:visited:hover, #footer > div #g3 section ul li a:visited:active {
+  color: white;
+  background-color: white;
 }
 
 /* =============
     hero
 ============= */
+#hero #hero-img {
+  background-image: url(../img/heros/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+@media (min-width: 768px) {
+  #hero #hero-img {
+    height: 50vh;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-img {
+    background-position: center 80%;
+    height: 65vh;
+  }
+}
+#hero img {
+  font-size: 0;
+  display: block;
+}
 @media (min-width: 768px) {
   #hero #hero-bottom {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
-#hero #hero-bottom section {
+@media (min-width: 1024px) {
+  #hero #hero-bottom {
+    grid-template-columns: 50% auto;
+  }
+}
+#hero #hero-bottom .hero-bottom-card {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
-}
-#hero #hero-bottom section > div {
-  grid-area: hero;
-}
-#hero #hero-bottom #hero-bottom-left {
-  background-color: var(--purple);
-  background-color: #4C4669;
   color: white;
-  padding: 0 16px;
+  padding: 16px 0;
 }
-@media (min-width: 768px) {
-  #hero #hero-bottom #hero-bottom-left {
-    padding-left: 16px;
-  }
-}
-#hero #hero-bottom #hero-bottom-left > div {
+#hero #hero-bottom .hero-bottom-card > div {
+  grid-area: hero;
   display: flex;
   align-items: center;
 }
-#hero #hero-bottom #hero-bottom-left > div nav {
+#hero #hero-bottom .hero-bottom-card > div aside {
   margin-left: auto;
+}
+#hero #hero-bottom .hero-bottom-card > div aside a:link, #hero #hero-bottom .hero-bottom-card > div aside a:visited {
+  display: flex;
+  color: white;
+  transition: 0.25s;
+}
+#hero #hero-bottom .hero-bottom-card > div aside a:link:hover, #hero #hero-bottom .hero-bottom-card > div aside a:link:active, #hero #hero-bottom .hero-bottom-card > div aside a:visited:hover, #hero #hero-bottom .hero-bottom-card > div aside a:visited:active {
+  color: gold;
+}
+#hero #hero-bottom #hero-bottom-left {
+  background-color: #4C4669;
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-left {
-    grid-template-columns: 20% auto 20%;
-    padding-left: 227px;
+    grid-template-columns: 20% auto 16px;
+  }
+}
+#hero #hero-bottom #hero-bottom-left h1 {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  #hero #hero-bottom #hero-bottom-left h1 {
+    line-height: 20px;
+    font-size: 1.5625rem;
+  }
+}
+#hero #hero-bottom #hero-bottom-left p {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 0.875rem;
+}
+@media (min-width: 1024px) {
+  #hero #hero-bottom #hero-bottom-left p {
+    line-height: 20px;
+    font-size: 1rem;
   }
 }
 #hero #hero-bottom #hero-bottom-right {
-  background-color: var(--lav);
   background-color: #9D94C9;
-  color: white;
-  padding: 0 16px;
-}
-#hero #hero-bottom #hero-bottom-right > div {
-  display: flex;
-  align-items: center;
-}
-#hero #hero-bottom #hero-bottom-right > div nav {
-  margin-left: auto;
 }
 @media (min-width: 1440px) {
   #hero #hero-bottom #hero-bottom-right {
     grid-template-columns: 16px auto 20%;
-    padding-right: 227px;
   }
+}
+#hero #hero-bottom #hero-bottom-right h3 {
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1rem;
 }
 
 /* =============
     sub-hero
 ============= */
+#sub-hero h2 {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  #sub-hero h2 {
+    line-height: 30px;
+    font-size: 1.5rem;
+  }
+}
+#sub-hero h3 {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1.375rem;
+}
+@media (min-width: 768px) {
+  #sub-hero h3 {
+    line-height: 30px;
+    font-size: 1.8125rem;
+  }
+}
 @media (min-width: 768px) {
   #sub-hero {
     display: grid;
@@ -605,19 +822,37 @@ header #form-content > div form button {
     grid-template-columns: 50% auto;
   }
 }
-#sub-hero > div aside {
-  display: flex;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". sub-hero .";
-  background-color: var(--sage);
+#sub-hero > div .sub-hero-cards {
   background-color: #9EAB8E;
+  box-shadow: 0px 1px 1px 0px rgba(42, 48, 54, 0.3019607843);
+  padding: 16px;
   color: white;
-}
-#sub-hero > div aside > div {
-  display: grid;
-  grid-template-columns: 70% auto;
+  display: flex;
   align-items: center;
-  margin: 25px 18px;
+}
+#sub-hero > div .sub-hero-cards aside {
+  margin-left: auto;
+  width: 20%;
+}
+@media (min-width: 1200px) {
+  #sub-hero > div .sub-hero-cards aside {
+    width: 20%;
+  }
+}
+#sub-hero > div .sub-hero-cards aside > div {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  border: 3px solid white;
+  overflow: hidden;
+}
+#sub-hero > div .sub-hero-cards aside #sub-left-img {
+  background-image: url("../img/ticket-link/tulip-circle.jpg");
+}
+#sub-hero > div .sub-hero-cards aside #sub-right-img {
+  background-image: url("../img/ticket-link/babys-breathe-circle.jpg");
 }
 
 /* =============
@@ -625,6 +860,27 @@ header #form-content > div form button {
 ============= */
 #activities {
   padding: 78px 14px;
+}
+#activities h1 {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+@media (min-width: 1024px) {
+  #activities h1 {
+    line-height: 55px;
+    font-size: 2.3125rem;
+  }
+}
+#activities h2 {
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 1.6875rem;
+}
+#activities p {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
 }
 @media (min-width: 768px) {
   #activities {
@@ -662,52 +918,43 @@ header #form-content > div form button {
 }
 #activities > div section img {
   width: 100%;
-}
-#activities > div section section {
-  display: flex;
-  justify-content: center;
-}
-#activities > div section section div {
-  padding: 18px 22px;
-  margin: 18px;
-}
-#activities > div section section div a {
-  background-color: #4C4669;
-  color: white;
-  padding: 5px;
+  font-size: 0;
+  display: block;
 }
 #activities > div section .act-sub {
-  display: flex;
+  display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". act-sub .";
   background-color: #5E6E62;
+  box-shadow: 0px 1px 1px 0px rgba(42, 48, 54, 0.3019607843);
+  padding: 16px 0;
   color: white;
 }
 #activities > div section .act-sub > div {
   grid-area: act-sub;
 }
 @media (min-width: 768px) {
-  #activities > div #p1 {
+  #activities #p1 {
     grid-area: p1;
   }
 }
 @media (min-width: 768px) {
-  #activities > div #p2 {
+  #activities #p2 {
     grid-area: p2;
   }
 }
 @media (min-width: 768px) {
-  #activities > div #p3 {
+  #activities #p3 {
     grid-area: p3;
   }
 }
 @media (min-width: 768px) {
-  #activities > div #p4 {
+  #activities #p4 {
     grid-area: p4;
   }
 }
 @media (min-width: 768px) {
-  #activities > div #p5 {
+  #activities #p5 {
     grid-area: p5;
   }
 }
@@ -724,11 +971,15 @@ header #form-content > div form button {
     grid-template-columns: auto 1200px auto;
   }
 }
+#photogallery ul {
+  display: grid;
+  grid-template-rows: 50vh 76vh;
+}
 @media (min-width: 768px) {
   #photogallery ul {
     grid-area: gallery;
-    display: grid;
     grid-template-columns: 50% auto;
+    grid-template-rows: 50vh;
   }
 }
 @media (min-width: 1024px) {
@@ -738,21 +989,37 @@ header #form-content > div form button {
 }
 @media (min-width: 1440px) {
   #photogallery ul {
-    grid-template-areas: "g1 g2" "g1 g3";
+    grid-template-rows: repeat(2, 30vh);
+    grid-template-areas: "f1 f3" "f1 f2";
   }
 }
-@media (min-width: 1440px) {
-  #photogallery ul #g1 {
-    grid-area: g1;
-  }
+#photogallery ul li {
+  background-size: cover;
+  background-position: center;
+}
+#photogallery ul #f1 {
+  background-image: url("../img/photogallery/bigflowers.jpg");
 }
 @media (min-width: 1440px) {
-  #photogallery ul #g2 {
-    grid-area: g2;
+  #photogallery ul #f1 {
+    grid-area: f1;
   }
 }
+#photogallery ul #f2 {
+  background-image: url("../img/photogallery/butterflies.jpg");
+}
 @media (min-width: 1440px) {
-  #photogallery ul #g3 {
+  #photogallery ul #f2 {
+    grid-area: f2;
+  }
+}
+#photogallery ul #f3 {
+  display: none;
+  background-image: url("../img/photogallery/tulipgroup.jpg");
+}
+@media (min-width: 1440px) {
+  #photogallery ul #f3 {
+    display: list-item;
     grid-area: g3;
   }
 }

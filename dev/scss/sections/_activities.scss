@@ -3,6 +3,31 @@
     Activites
 ============= */
 #activities{
+  h1{
+    font-weight: 400;
+            line-height: 30px;
+            font-size: rem-calc(20);
+
+            @include lg{
+                line-height: 55px;
+                font-size: rem-calc(37);
+            }
+  }
+
+  h2{
+    font-weight: 600;
+            line-height: 30px;
+            font-size: rem-calc(27);
+  }
+  p{
+    font-weight: 400;
+            line-height: 20px;
+            font-size: rem-calc(16);
+
+    
+  }
+
+
   padding: 78px 14px;
 
   @include md{
@@ -46,34 +71,29 @@
       
       img{
         width: 100%;
-      }
-      section{
-        display: flex;
-        justify-content: center;
-
-        div{
-          padding: 18px 22px;
-          margin: 18px;
-          a{
-            
-            background-color: #4C4669;
-            color: white;
-            padding: 5px;
-          }
-
-        }
+        font-size: 0;
+        display: block;
+        
       }
       .act-sub{
-        display: flex;
+        display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". act-sub .";
         background-color: #5E6E62;
+        box-shadow: 0px 1px 1px 0px #2A30364D;
+
+        padding: 16px 0;
         color: white;
         >div{
           grid-area: act-sub;
         }
 
   }
+      
+
+        
+      }
+      
 
 
 }
@@ -108,7 +128,7 @@
     }
 
   }
-}
+
   
   
 

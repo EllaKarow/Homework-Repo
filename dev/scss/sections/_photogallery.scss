@@ -8,38 +8,64 @@
   @include xxl{
     grid-template-columns: auto 1200px auto;
   }
+
   ul{
+
+    display: grid;
+    grid-template-rows: 50vh 76vh;
+
     @include md{
       grid-area: gallery;
-      display: grid;
       grid-template-columns: 50% auto;
+      grid-template-rows: 50vh;
     }
+
     @include lg{
       grid-template-columns: 60% auto;
     }
+  
+
     @include xxl{
+      grid-template-rows: repeat(2,30vh);
       grid-template-areas: 
-      "g1 g2"
-      "g1 g3";
+      "f1 f3"
+      "f1 f2";
     }
 
-    #g1{
+    li{
+      background-size: cover;
+      background-position: center;
+    }
+
+  
+    #f1{
+      background-image: url("../img/photogallery/bigflowers.jpg");
       @include xxl{
-        grid-area: g1;
+      grid-area: f1;
       }
     }
-    #g2{
+
+    #f2{
+      background-image: url("../img/photogallery/butterflies.jpg");
       @include xxl{
-        grid-area: g2;
+      grid-area: f2;
       }
     }
-    #g3{
+
+    #f3{
+      display: none;
+      background-image: url("../img/photogallery/tulipgroup.jpg");
       @include xxl{
-        grid-area: g3;
+      display: list-item;
+      grid-area: g3;
       }
+    }
+
+
+    
     }
   }
-}
+
 
 
   
